@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    user-select: none;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* navbar */
+nav {
+    position: sticky;
+    top: 0;
+    height: 3.125rem;
+    width: 100vw;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    justify-content: space-around;
+}
+
+.cart-items {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #6a6764ab;
+    padding: 0 5px;
+    border-radius: 30%;
+    color: white;
+}
+
+nav .header,
+i {
+    color: white;
+    font-size: 1.875rem;
+    letter-spacing: 2px;
+}
+
+nav i {
+    cursor: pointer;
+}
+
+nav i:hover {
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.cart-btn {
+    position: relative;
+    cursor: pointer;
+}
+
+/* main */
+.main {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.main-bg {
+    width: 100%;
+    height: 94vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 45px);
+}
+
+.centerdiv {
+    position: absolute;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.765);
+    display: inline-block;
+    padding: 2rem;
+    z-index: 100;
+    /* border-radius: 1.875rem; */
+}
+
+.center-heading {
+    padding: 0.625rem;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+}
+
+/* button */
+.btn {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border: none;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
+.btn1 {
+    letter-spacing: 2px;
+    padding: 1rem 3rem;
+}
+
+.btn1:hover {
+    background: transparent;
+    color: black;
+}
+
+/* items */
+.flex1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading-2 {
+    font-size: 3.25rem;
+    padding: 20px;
+}
+
+.furniture-items {
+    padding-bottom: 50px;
+    background: linear-gradient(90deg, rgba(201, 198, 198, 1) 0%, rgba(241, 242, 246, 1) 35%);
+}
+
+/* cards */
+.furniture-card {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 2rem;
+    place-items: center;
+}
+
+.img-container {
+    /* padding-top: 50px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.product-img {
+    width: 17.188rem;
+    height: 17.188rem;
+    border-radius: 10px;
+}
+
+/* add to cart btn */
+
+.bag-btn {
+    position: absolute;
+    top: 70%;
+    right: 0.9%;
+    padding: 0.5rem 0.75rem;
+    transform: translateX(127%);
+    font-weight: bold;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    letter-spacing: 0.1rem;
+}
+
+.img-container:hover .bag-btn {
+    transform: translateX(0);
+}
+
+.img-container:hover .product-img {
+    opacity: 0.5;
+}
+
+.bag-btn:hover {
+    /* background-color: red; */
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.banner-btn {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border: none;
+    background-color: white;
+    padding: 10px;
+}
+
+.banner-btn:hover {
+    border: 1px solid white;
+    background: transparent;
+    color: red;
+}
+
+.img-container:hover .product-img {
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+}
+
+.fa-shopping-cart {
+    margin-right: 0.5rem;
+}
+
+/* product-headings */
+.product h3 {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.product h4 {
+    margin-top: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: #f05b51;
+    text-align: center;
+}
+
+/* cart */
+.cart-struct {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s linear;
+    background: rgba(20, 20, 20, 0.616);
+    z-index: 100;
+    visibility: hidden;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    z-index: 101;
+    background: rgba(9, 9, 9, 0.817);
+    padding: 1.5rem;
+    transition: all 0.1s linear;
+    transform: translateX(100%);
+    overflow-x: hidden;
+    color: white;
+
+}
+
+/* JS Class List */
+.showCart {
+    transform: translateX(0);
+}
+
+.transparentBG {
+    visibility: visible;
+}
+
+/* cart */
+.cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.cart-item img {
+    width: 75px;
+    height: 75px;
+}
+
+.cart-item h4 {
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+}
+
+.cart-item h5 {
+    margin: 0.5rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.item-amount {
+    text-align: center;
+}
+
+.remove-item {
+    color: rgb(241, 35, 8);
+    cursor: pointer;
+}
+
+.cart-footer {
+    margin-top: 2rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.cart-footer h3 {
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+.close-cart {
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.cart h2 {
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width:428px) {
+
+
+    /* navbar */
+    nav .header,
+    i {
+        font-size: 1.3rem;
+    }
+
+    nav .fa-bars {
+        opacity: 0;
+    }
+
+    nav .header,
+    .fa-cart-shopping {
+        transform: translateX(-50%);
+    }
+
+    /* main */
+    .centerdiv {
+        padding: 0.1rem;
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    /* heading-2 */
+    .heading-2 {
+        font-size: 2.25rem;
+        /* margin: 2rem 0 0 0; */
+        /* padding: 0; */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cart {
+        width: 30vw;
+        min-width: 450px;
+    }
+}

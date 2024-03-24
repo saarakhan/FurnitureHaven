@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Luxury Bed",
+        "price": 99.1,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-1.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "Sofa & Seating",
+        "price": 25.2,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-2.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "Dresser",
+        "price": 10.22,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-3.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "Round Table",
+        "price": 34.12,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-4.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "Console Table",
+        "price": 34.1,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-5.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "6" },
+      "fields": {
+        "title": "Dinning Table",
+        "price": 43.4,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-6.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "7" },
+      "fields": {
+        "title": "Italian Luxury Sofa Chair",
+        "price": 15.29,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-7.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "8" },
+      "fields": {
+        "title": "Black Marble Luxe Table",
+        "price": 13.19,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-8.jpg" } }
+        }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Standing Floor Mirror",
+        "price": 22.19,
+        "image": {
+          "fields": { "file": { "url": "assests/images/product-9.jpg" } }
+        }
+      }
+    }
+  ]
+}
